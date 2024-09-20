@@ -130,7 +130,7 @@ const MachineTable = () => {
             </thead>
             <tbody>
               {machines.map((machine, index) => (
-                <tr key={index} className="hover:bg-gray-100">
+                <tr key={index} className="hover:bg-blue-600 hover:text-white">
                   <td className="px-4 py-2 border">{machine.description}</td>
                   <td className="px-4 py-2 border">{machine.model}</td>
                   <td className="px-4 py-2 border">{machine.make}</td>
