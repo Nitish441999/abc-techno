@@ -105,14 +105,18 @@ const MachineTable = () => {
   return (
     <>
       <section className="p-6 text-gray-800 mt-12 w-[90%] mx-auto">
-        <div className="text-center">
-          <h2 className="text-4xl md:text-2xl font-bold relative inline-block pb-2">
-            Machine Inventory
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-primary"></span>
-          </h2>
+        <div className="flex justify-center mb-3">
+        <div >
+        <h2 className="text-3xl font-bold mb-1 relative">
+           Machine Inventory
+        </h2>
+        <div className="relative w-full rounded-md h-2 bg-blue-700 overflow-hidden ">
+         <span className="absolute bg-orange-400 w-full h-full animate-slide"></span>
         </div>
+        </div>
+      </div>
       </section>
-      <div className="container mx-auto p-4">
+      <div className="container mx-auto p-4 w-[90%] ">
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white border border-gray-200">
             <thead className=" bg-orange-400 text-gray-800">

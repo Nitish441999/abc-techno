@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp, FaSkype } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
 
@@ -45,6 +45,11 @@ function Head() {
         <li className="rounded-full transition-all duration-300 transform hover:scale-110 hover:text-primary">
           <a href="#" aria-label="Whatsapp" className="hover:cursor-pointer">
             <FaWhatsapp />
+          </a>
+        </li>
+        <li className="rounded-full transition-all duration-300 transform hover:scale-110 hover:text-primary">
+          <a href="#" aria-label="Whatsapp" className="hover:cursor-pointer">
+          <FaSkype />
           </a>
         </li>
       </ul>
