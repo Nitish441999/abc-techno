@@ -117,13 +117,13 @@ function Products() {
       {/* Prev and Next Buttons */}
       <button
         onClick={handlePrev}
-        className="absolute right-24 top-20 transform -translate-y-2/2 px-4 py-2 my-1 bg-[#1d4ed8] text-white rounded hover:bg-blue-800 max-sm:top-14"
+        className="absolute right-24 top-14 transform -translate-y-2/2 px-4 py-2 my-1 bg-[#1d4ed8] text-white rounded hover:bg-blue-800 min-sm:top-14"
       >
         Previous
       </button>
       <button
         onClick={handleNext}
-        className="absolute right-4 top-20 transform -translate-y-2/2 px-4 py-2 my-1 bg-[#1d4ed8] text-white rounded hover:bg-blue-800 max-sm:top-14"
+        className="absolute right-4 top-14 transform -translate-y-2/2 px-4 py-2 my-1 bg-[#1d4ed8] text-white rounded hover:bg-blue-800 min-sm:top-14"
       >
         Next
       </button>
