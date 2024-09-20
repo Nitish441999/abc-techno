@@ -69,7 +69,7 @@ function ClientCounter() {
             className="flex flex-col justify-start m-4 lg:m-6 overflow-hidden"
             data-aos="fade-up"
           >
-            <span className="text-6xl mx-auto mb-4 max-md:text-8xl text-primary bg-gray-200 w-20 h-20 flex justify-center items-center rounded-md text-blue-700">
+            <span className="text-6xl mx-auto mb-4 max-md:text-8xl text-primary bg-gray-200 w-20 h-20 flex justify-center items-center rounded-md text-blue-700 max-sm:text-5xl">
               {item.icon}
             </span>
             <p className="text-4xl font-bold leading-none lg:text-6xl">

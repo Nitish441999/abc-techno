@@ -44,7 +44,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="w-full h-[35rem] relative">
+    <div className="w-full h-[35rem] max-sm:h-[30rem] relative">
       <Slider {...settings} className="overflow-hidden relative">
         <div className="relative">
           <img

@@ -79,22 +79,23 @@ function Products() {
   };
 
   return (
-    <div className="relative p-4 w-[90%] mx-auto mt-10">
+    <div className="relative w-[90%] mx-auto mt-10">
       <div className="flex justify-center mb-16">
         <div>
-          <h2 className="text-3xl font-bold mb-1 relative">Products & Service</h2>
+          <h2 className="text-3xl font-bold mb-1 relative max-sm:text-2xl">Products & Service</h2>
           <div className="relative w-full rounded-md h-2 bg-blue-700 overflow-hidden">
             <span className="absolute bg-orange-400 w-full h-full animate-slide"></span>
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row mx-auto lg:justify-between lg:gap-4">
+      <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-4">
         {productData.slice(currentIndex, currentIndex + (isMobile ? 1 : 2)).map((product) => (
           <div
             key={product.id}
-            className="flex flex-col lg:flex-row items-center bg-gradient-to-r to-orange-400 from-blue-700 shadow-sm shadow-gray-700 rounded p-4 mb-4 lg:mb-0"
+            className="flex flex-col lg:flex-row items-center bg-gradient-to-r to-orange-400 from-blue-700 shadow-sm shadow-gray-700 rounded p-4 mb-4 lg:mb-0 max-sm:w-full"
             data-aos="zoom-in-up"
             data-aos-duration="1200"
+            
           >
             <div className="w-full lg:w-[40%] bg-white h-[22rem] flex items-center justify-center rounded-lg mb-4 lg:mb-0">
               <img src={product.image} alt={product.title} className="object-contain" />
@@ -116,13 +117,13 @@ function Products() {
       {/* Prev and Next Buttons */}
       <button
         onClick={handlePrev}
-        className="absolute right-24 top-20 transform -translate-y-2/2 px-4 py-2 my-1 bg-[#1d4ed8] text-white rounded hover:bg-blue-800"
+        className="absolute right-24 top-20 transform -translate-y-2/2 px-4 py-2 my-1 bg-[#1d4ed8] text-white rounded hover:bg-blue-800 max-sm:top-14"
       >
         Previous
       </button>
       <button
         onClick={handleNext}
-        className="absolute right-4 top-20 transform -translate-y-2/2 px-4 py-2 my-1 bg-[#1d4ed8] text-white rounded hover:bg-blue-800"
+        className="absolute right-4 top-20 transform -translate-y-2/2 px-4 py-2 my-1 bg-[#1d4ed8] text-white rounded hover:bg-blue-800 max-sm:top-14"
       >
         Next
       </button>
